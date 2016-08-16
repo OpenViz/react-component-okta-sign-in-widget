@@ -2,19 +2,6 @@
 
 import React, { Component, PropTypes } from 'react';
 
-const AUTH_SCHEME = "OAUTH2";
-const AUTH_PARAMS = {
-        responseType: "id_token",
-        responseMode: "okta_post_message",
-        scope : [
-            "openid",
-            "email",
-            "profile",
-            "address",
-            "phone"
-        ]
-      };
-
 export default class OktaSignInWidget extends Component {
   static contextTypes = {
     router: PropTypes.object
@@ -28,13 +15,7 @@ export default class OktaSignInWidget extends Component {
     const that = this;
 
     // create Okta auth object
-    const auth = new OktaSignIn({
-      baseUrl: this.props.options.baseUrl,
-      clientId : this.props.options.clientId,
-      redirectUri: this.props.options.redirectUri,
-      authScheme : AUTH_SCHEME,
-      authParams : AUTH_PARAMS
-    });
+    const auth = new OktaSignIn(this.props.options);
 
     // check existing session
     setTimeout(() => {
