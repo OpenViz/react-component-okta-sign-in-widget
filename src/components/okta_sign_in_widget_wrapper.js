@@ -10,10 +10,10 @@ const OPTIONS = {
             baseUrl: "https://dev-570863.oktapreview.com",
             clientId : "OaCz3jBQxbaEnsDAFO3A",
             redirectUri: "http://localhost:8080/"
-        };
+          };
 
 export default class OktaSignInWidgetWrapper extends Component {
-    render() {
-        return <OktaSignInWidget container={WIDGET_CONTAINER_ID} options={OPTIONS} successRoute={LOGIN_SUCCESS_ROUTE} />;
-    }
+  render() {
+    return <OktaSignInWidget container={WIDGET_CONTAINER_ID} options={OPTIONS} successRoute={LOGIN_SUCCESS_ROUTE} />;
+  }
 }
