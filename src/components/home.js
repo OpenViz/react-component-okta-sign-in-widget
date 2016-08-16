@@ -40,13 +40,12 @@ export default class Home extends Component {
         that.setState({ authenticated : exists });
       });
     }, 0);
-
   }
 
   closeSession() {
     const that = this;
 
-    this.auth.session.close(function(){
+    this.auth.session.close(function() {
       that.setState({ authenticated : false });
     });
   }
