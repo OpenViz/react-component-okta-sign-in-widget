@@ -11,7 +11,7 @@ Launch the sign in widget of Okta.
 
 
 ## How to run the example:
-YOu need to have node installed on your computer, then, inside the folder, run:
+You need to have node installed on your computer, then, inside the folder, run:
 - npm install
 - npm start
 
