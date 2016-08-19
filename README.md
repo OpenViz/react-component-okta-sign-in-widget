@@ -1,4 +1,4 @@
-#Okta Sign In Widget Compnent for React
+#Okta Sign In Widget Component for React
 
 The following example will explain how to use the Okta Auth Wrapper and the Okta Sign In Wrapper for React.js.
 
