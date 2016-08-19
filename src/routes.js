@@ -11,8 +11,8 @@ import Home from './components/home';
 export default (
   <Route component={App}>
     <Route path="/" component={OktaAuthWrapper} >
-        <Route path="login" component={OktaSignInWidgetWrapper} />
-        <Route path="home" component={Home} />
+      <Route path="login" component={OktaSignInWidgetWrapper} />
+      <Route path="home" component={Home} />
     </Route>
   </Route>
 );

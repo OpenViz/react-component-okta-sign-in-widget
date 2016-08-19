@@ -8,7 +8,6 @@ const WIDGET_CONTAINER_ID = 'okta-login-container';
 
 export default class OktaSignInWidgetWrapper extends Component {
   render() {
-    console.log('in sign in wrapper');
     return <OktaSignInWidget container={WIDGET_CONTAINER_ID} auth={this.props.auth} successRoute={this.props.successRoute} />;
   }
 }

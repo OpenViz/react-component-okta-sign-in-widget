@@ -17,7 +17,6 @@ export default class OktaSignInWidget extends Component {
       },
       (res) => {
         this.context.router.push(successRoute);
-        //res.session.setCookieAndRedirect('http://localhost:8080/home');
       }
     );
     }, 0);
